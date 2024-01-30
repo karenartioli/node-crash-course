@@ -2,9 +2,11 @@
 // use res.send() to send a simple string back in the case of either request. 
 // The string should contain the results of a dice roll (either 1 d6 die, or 2 d6 dice summed, respectively).
 
+console.log("6.2 is running");
+
 const express = require('express');
 const app = express();
-app.listen(3000);
+app.listen(3000, () => {console.log("starts to listening")});
 
 function randomDieRoll() {
     return 1 + Math.floor((Math.random() * 6));

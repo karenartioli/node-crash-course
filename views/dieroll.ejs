@@ -1,0 +1,14 @@
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+  <%- include('./partials/nav.ejs') %>
+<body>
+  <h1>Die Roll</h1>
+  <h2>Your path to becoming a Node.js ninja!</h2>
+  <p>The result of your die roll is: </p>
+  <%= 1 + Math.floor((Math.random() * 6)) %><br>
+  <a href="/dieroll">Click here to roll it again.</a></li>
+    <br>
+    <br>
+  <%- include('./partials/footer.ejs') %>
+</body>
+</html>

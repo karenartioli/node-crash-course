@@ -1,0 +1,23 @@
+<html lang="en">
+
+<%- include('./partials/head.ejs') %>
+
+<%- include('./partials/nav.ejs') %>
+
+<body>
+  <h1>Home</h1>
+  <h2>Your path to becoming a Node.js ninja!</h2>
+
+<ul>
+  <% if (scholars.length > 0) { %>
+    <% for (let name of scholars) { %>
+      <li><%= name %></li>
+    <% } %>
+  <% } else { %>
+    <li>Empty array</li>
+    <% } %>
+</ul>
+
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>

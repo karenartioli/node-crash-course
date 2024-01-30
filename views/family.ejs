@@ -1,0 +1,23 @@
+<html lang="en">
+
+<%- include('./partials/head.ejs') %>
+
+<%- include('./partials/nav.ejs') %>
+
+<body>
+  <h1>Home</h1>
+  <h2>Your path to becoming a Node.js ninja!</h2>
+
+  <% if (myFamily.length > 0) { %>
+    <% for (let member of myFamily) { %>
+      <h3 class="name"><%= member.name %></h3>
+      <p class="age"><%= member.age %></p>
+      <p class="gender"><%= member.gender %></p>
+    <% } %>
+  <% } else { %>
+    <p>There are no family members on the database.</p>
+    <% } %>
+
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>
